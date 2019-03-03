@@ -15,6 +15,8 @@
         <property id="6951356264497736489" name="size" index="OUGqo" />
       </concept>
       <concept id="6951356264497736495" name="Shapes.structure.Canvas" flags="ng" index="OUGqu">
+        <property id="987122303136489030" name="hight" index="TSyz7" />
+        <property id="987122303136489059" name="width" index="TSyzy" />
         <child id="6951356264497736498" name="shapes" index="OUGq3" />
       </concept>
       <concept id="6951356264497736469" name="Shapes.structure.Shape" flags="ng" index="OUGq$">
@@ -28,6 +30,19 @@
       <concept id="6951356264498020472" name="Shapes.structure.ColorReference" flags="ng" index="OVQR9">
         <reference id="6951356264498020473" name="target" index="OVQR8" />
       </concept>
+      <concept id="987122303136728497" name="Shapes.structure.Polygon" flags="ng" index="TTBcK">
+        <child id="987122303136728957" name="points" index="TTB7W" />
+      </concept>
+      <concept id="987122303136725949" name="Shapes.structure.Point" flags="ng" index="TTCOW">
+        <property id="987122303136727927" name="y" index="TTBnQ" />
+        <property id="987122303136726436" name="x" index="TTCG_" />
+      </concept>
+      <concept id="987122303135565545" name="Shapes.structure.Rectangle" flags="ng" index="TW31C">
+        <property id="987122303135565573" name="upperLeftX" index="TW364" />
+        <property id="987122303135565614" name="upperLeftY" index="TW36J" />
+        <property id="987122303135565644" name="hight" index="TW37d" />
+        <property id="987122303135565675" name="width" index="TW37E" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -37,6 +52,8 @@
   </registry>
   <node concept="OUGqu" id="61Sbr5k$MEb">
     <property role="TrG5h" value="MyDrawing" />
+    <property role="TSyz7" value="700" />
+    <property role="TSyzy" value="500" />
     <node concept="OUGqB" id="61Sbr5k$MEc" role="OUGq3">
       <property role="OUGqA" value="10" />
       <property role="OUGqC" value="20" />
@@ -59,6 +76,32 @@
       <property role="OUGqH" value="200" />
       <node concept="OVQR9" id="61Sbr5kKy6c" role="OVQ$i">
         <ref role="OVQR8" to="s9ms:61Sbr5k_EEd" resolve="red" />
+      </node>
+    </node>
+    <node concept="TW31C" id="QMXC4Oh62Z" role="OUGq3">
+      <property role="TW364" value="150" />
+      <property role="TW36J" value="78" />
+      <property role="TW37d" value="129" />
+      <property role="TW37E" value="28" />
+      <node concept="OVQR9" id="QMXC4Oh64Y" role="OVQ$i">
+        <ref role="OVQR8" to="s9ms:61Sbr5k_EEf" resolve="cyan" />
+      </node>
+    </node>
+    <node concept="TTBcK" id="QMXC4Olwik" role="OUGq3">
+      <node concept="OVQR9" id="QMXC4Olwmc" role="OVQ$i">
+        <ref role="OVQR8" to="s9ms:61Sbr5k_EEe" resolve="green" />
+      </node>
+      <node concept="TTCOW" id="QMXC4Olwov" role="TTB7W">
+        <property role="TTCG_" value="10" />
+        <property role="TTBnQ" value="100" />
+      </node>
+      <node concept="TTCOW" id="QMXC4OlwqC" role="TTB7W">
+        <property role="TTCG_" value="20" />
+        <property role="TTBnQ" value="20" />
+      </node>
+      <node concept="TTCOW" id="QMXC4Olwtd" role="TTB7W">
+        <property role="TTCG_" value="30" />
+        <property role="TTBnQ" value="100" />
       </node>
     </node>
   </node>
